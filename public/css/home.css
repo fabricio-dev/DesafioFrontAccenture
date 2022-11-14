@@ -1,5 +1,5 @@
 div#cabessalho{
-	background-color: #184366;
+	background-color: #044377;
   }
 
   #idvisual{
@@ -15,7 +15,7 @@ div#cabessalho{
 
   }
   #sidebar{
-	background-color: #04035e;
+	background-color: #044377;
 	
 
   }
@@ -27,10 +27,18 @@ div#cabessalho{
   #table{
 	background-color: #05532f;
 	color: aliceblue;
+	
   }
+  #contenTable{
+	padding-top: 20px;
+	margin: auto;
+  }
+ 
+
+
   #corp{
 	
-	color: rgb(7, 131, 28);
+	color: rgb(19, 219, 52);
   }
   
  

@@ -91,20 +91,22 @@
 <div id="Grafico">
     
 	<!-- o grafico e montado na dive   -->
-	<div id="columnchart_values" class=""  ></div>
+	<div id="columnchart_values"  ></div>
 
 </div>
      <!-- fim grafico   -->
 	  	<!-- inicio tabela de dados -->
 
-<div id=”tabela”>
-<h1>
-	Analize de Atendimento
-</h1>
+<div id="contenTable"class="table-responsive">
+
 <table class="table table-striped">
+<caption>DADOS DE ATENDIMENTO</caption>
+   
   <thead id="table">
+
+  <tr>DADOS DE ATENDIMENTO</tr>
     <tr>
-	  <th scope="col">Id</th>
+	  <th scope="title">Id</th>
       <th scope="col">Data</th>
       <th scope="col">Demanda</th>
       <th scope="col">Capacidade</th>
@@ -134,7 +136,8 @@
 </table>
 </div>
 <!-- fim tabela de dados -->
-    </div>
+
+</div>
  </div>
 
 </div>
@@ -169,8 +172,9 @@
         ["data", "desvio", { role: "style" } ],
 		<?php 
 		foreach ($atendimento as $atendiment) {
+		$diferenca=$atendiment-> capacidade - $atendiment->atendimento_realizado;	
 		?>
-		 ["<?php echo $atendiment->data  ?>", <?php echo $atendiment->desvio ?>, "#DAA520"],
+		 ["<?php echo $atendiment->data  ?>", <?php echo $diferenca ?>, "#DAA520"],
 	<?php }?>
 
       ]);
@@ -184,9 +188,9 @@
                        2]);
 
       var options = {
-        title: "Capacidade X Atendimento Realizado",
+        title: "Diferença: Capacidade X Atendimento Realizado ",
         width:"100%" ,
-        height: 400,
+        height: 500,
         bar: {groupWidth: "80%"},
         legend: { position: "none" },
       };
