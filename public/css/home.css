@@ -1,0 +1,38 @@
+div#cabessalho{
+	background-color: #184366;
+  }
+
+  #idvisual{
+	color:  rgb(255, 255, 255);
+	margin: auto;
+
+  }
+  
+  #logoCabessalho{
+	
+	margin: 2px;
+	max-width: 85px; max-height: 73px;
+
+  }
+  #sidebar{
+	background-color: #04035e;
+	
+
+  }
+  #sidebarCollapse{
+   
+	color: aliceblue;
+	
+  }
+  #table{
+	background-color: #05532f;
+	color: aliceblue;
+  }
+  #corp{
+	
+	color: rgb(7, 131, 28);
+  }
+  
+ 
+
+
